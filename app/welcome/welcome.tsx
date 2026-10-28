@@ -1,5 +1,11 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
+import Indymologo from "./indymoLOGO.webp"
+import Button from "@mui/material/Button";
+
+function clickMe (){
+  alert ("You clicked me!");
+}
 
 export function Welcome() {
   return (
@@ -8,7 +14,7 @@ export function Welcome() {
         <header className="flex flex-col items-center gap-9">
           <div className="w-[500px] max-w-[100vw] p-4">
             <img
-              src={logoLight}
+              src={Indymologo}
               alt="React Router"
               className="block w-full dark:hidden"
             />
@@ -17,13 +23,30 @@ export function Welcome() {
               alt="React Router"
               className="hidden w-full dark:block"
             />
+
+            
           </div>
         </header>
-        <div className="max-w-[300px] w-full space-y-6 px-4">
-          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-              What&apos;s next?
-            </p>
+        <div className="max-w-[300px] w-full space-y-10 px-4">
+          <nav className="rounded-3xl border-10 border-yellow-500 p-3 space-y-4" style={{ backgroundColor: "#6d6d6d" }}>
+          <p className="leading-6 text-white text-center">
+          Login
+          </p>
+
+            
+        <form>
+        <label><span style={{ fontSize: "14px" }}>Username:</span> <input type="text" name="name" style={{ border: "1px solid black",borderRadius: "5px", fontSize:"16px",backgroundColor: "#cdcdcd"}} /></label>
+
+       <label> <span style={{ fontSize: "14px" }}>Password:</span> <input type="text" name="password" style={{ border: "1px solid black",borderRadius: "5px",fontSize:"16px", backgroundColor: "#cdcdcd"}} /></label>
+
+  <button className="my-button" onClick={clickMe}>
+    Submit
+  </button>
+
+  
+</form>
+
+
             <ul>
               {resources.map(({ href, text, icon }) => (
                 <li key={href}>

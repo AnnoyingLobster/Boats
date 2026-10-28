@@ -12,4 +12,23 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
+  .my-button {
+  /* Color */
+  background-color: rgb(55, 55, 58);
+  color: white;
+
+  /* Size */
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  position: relative;
+  top: 20px;
+  left: 60px;
+
+  /* Border */
+  border: none;
+  border-radius: 8px;
+  }
+  
 }

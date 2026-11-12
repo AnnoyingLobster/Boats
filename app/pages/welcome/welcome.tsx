@@ -3,6 +3,9 @@ import logoLight from "./logo-light.svg";
 import Indymologo from "./indymoLOGO.webp"
 import Button from "@mui/material/Button";
 
+import { useState } from "react";
+import { useNavigate } from "react-router";
+
 function clickMe (){
   alert ("You clicked me!");
 }
